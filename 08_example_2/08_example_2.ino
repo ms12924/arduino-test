@@ -27,8 +27,7 @@ void setup() {
 }
 
 void loop() { 
-
-  // wait until next sampling time. // polling
+  
   // millis() returns the number of milliseconds since the program started.
   //    will overflow after 50 days.
   if (millis() < (last_sampling_time + INTERVAL))
