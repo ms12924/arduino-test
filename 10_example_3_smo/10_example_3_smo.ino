@@ -15,7 +15,6 @@ bool moving = false;
 bool gateUp = false;
 
 float smoothStep (float x){
-  const float k =8.0;
   if (x < 0.0) x = 0.0;
   if (x > 1.0) x = 1.0;
   return x * x * (3 - 2 * x);
