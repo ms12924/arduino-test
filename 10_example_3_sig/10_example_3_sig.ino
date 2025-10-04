@@ -49,7 +49,7 @@ void loop() {
    gateUp = true;
    moveStartTime = millis();
    moving = true;
-   lastDetecttime = millis();
+   lastDetectTime = millis();
   }
 
   if (!moving && gateUp && distance > 30.0 && millis() - lastDetectTime > 2000){
