@@ -38,7 +38,7 @@ void setup() {
   pinMode(PIN_ECHO, INPUT);
  
   myServo.attach(PIN_SERVO);
-  myServo.write(startAngle); // Set position
+  myServo.write(startAngle); 
   delay(500);
 }
 
@@ -62,7 +62,6 @@ void loop() {
     unsigned long progress = millis() - moveStartTime;
 
     if (progress <= MOVING_TIME) {
-    // while moving
       float t = (float)progress / MOVING_TIME;
       float s = sigmoid(t);
       
